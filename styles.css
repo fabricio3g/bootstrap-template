@@ -1,0 +1,136 @@
+body {
+  font-family: "Lato", sans-serif !important;
+}
+
+/* TEXT AND BACKGROUND COLORS */
+
+.bg-main{
+    background: var(--bg-main);
+}
+
+
+
+.bg-main-trasnparent{
+    background-color: var(--bg-main-transparent);
+}
+
+
+
+.text-main{
+    color: var(--text-main) !important;
+}
+
+
+.navbar-toggler-icon{
+    color: #fff !important;
+}
+
+
+.text-blue-gradient{
+    background: rgb(16,68,190);
+    background: linear-gradient(27deg, rgba(16,68,190,1) 35%, rgba(73,198,251,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* BUTTONS */
+
+.primary-btn{
+    padding: 50px;
+    color: #fff !important;
+    border:none;
+    background: rgb(16,68,190);
+    background: linear-gradient(27deg, rgba(16,68,190,1) 35%, rgba(73,198,251,1) 100%); 
+
+}
+
+.primary-btn:hover{
+    background: rgb(16,68,190);
+    background: linear-gradient(247deg, rgba(16,68,190,1) 35%, rgba(73,198,251,1) 100%); 
+    font-weight: 500;
+}
+
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+/* BACKGROUND VIDEO */
+
+
+.video-section{
+    background: url(https://www.rrest.com/wp-content/uploads/2022/01/What-is-rREST-Thumbnail.jpg) no-repeat center;
+    background-size: contain; 
+    height: 100vh;
+}
+
+
+.image-section-0{
+    
+    background-image: url(https://www.rrest.com/wp-content/uploads/2021/11/rREST-childhood-fix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+
+.wrapper {
+  
+    max-width: 100%;
+}
+
+
+.header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 40rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-main);
+    opacity: 0.2;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    .header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    .header video {
+      display: none;
+    }
+  }
